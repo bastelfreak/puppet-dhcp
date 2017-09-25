@@ -1,8 +1,20 @@
-# Change log
+# Changelog
 
 All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
-These should not impact the functionality of the module.
+These should not affect the functionality of the module.
+
+## [v2.1.0](https://github.com/voxpupuli/puppet-dhcp/tree/v2.1.0) (2017-09-25)
+[Full Changelog](https://github.com/voxpupuli/puppet-dhcp/compare/v2.0.0...v2.1.0)
+
+**Implemented enhancements:**
+
+- Update $extra\_config to work with arrays and not only strings [\#156](https://github.com/voxpupuli/puppet-dhcp/pull/156) ([bastelfreak](https://github.com/bastelfreak))
+- Support SmartOS [\#155](https://github.com/voxpupuli/puppet-dhcp/pull/155) ([petems](https://github.com/petems))
+
+**Merged pull requests:**
+
+- release 2.0.1 [\#153](https://github.com/voxpupuli/puppet-dhcp/pull/153) ([bastelfreak](https://github.com/bastelfreak))
 
 ## [v2.0.0](https://github.com/voxpupuli/puppet-dhcp/tree/v2.0.0) (2017-06-15)
 [Full Changelog](https://github.com/voxpupuli/puppet-dhcp/compare/v1.1.0...v2.0.0)
@@ -14,10 +26,6 @@ These should not impact the functionality of the module.
 - Add OMAPI key configuration [\#90](https://github.com/voxpupuli/puppet-dhcp/issues/90)
 - Add define for specifying DHCP classes [\#86](https://github.com/voxpupuli/puppet-dhcp/issues/86)
 
-**Breaking changes:**
-
-- modulesync 0.17.0 and drop puppet3 support [\#138](https://github.com/voxpupuli/puppet-dhcp/pull/138) ([bastelfreak](https://github.com/bastelfreak))
-
 **Merged pull requests:**
 
 - release 2.0.0 [\#152](https://github.com/voxpupuli/puppet-dhcp/pull/152) ([bastelfreak](https://github.com/bastelfreak))
@@ -28,6 +36,7 @@ These should not impact the functionality of the module.
 - migrate to puppet4 datatypes [\#144](https://github.com/voxpupuli/puppet-dhcp/pull/144) ([bastelfreak](https://github.com/bastelfreak))
 - Add dhcp\_class define to create custom DHCP class [\#142](https://github.com/voxpupuli/puppet-dhcp/pull/142) ([domcleal](https://github.com/domcleal))
 - Add omapi\_name, key, algorithm parameters [\#141](https://github.com/voxpupuli/puppet-dhcp/pull/141) ([domcleal](https://github.com/domcleal))
+- modulesync 0.17.0 and drop puppet3 support [\#138](https://github.com/voxpupuli/puppet-dhcp/pull/138) ([bastelfreak](https://github.com/bastelfreak))
 
 ## [v1.1.0](https://github.com/voxpupuli/puppet-dhcp/tree/v1.1.0) (2017-01-12)
 [Full Changelog](https://github.com/voxpupuli/puppet-dhcp/compare/v1.0.1...v1.1.0)
@@ -111,10 +120,6 @@ These should not impact the functionality of the module.
 ## [0.4.0](https://github.com/voxpupuli/puppet-dhcp/tree/0.4.0) (2015-09-15)
 [Full Changelog](https://github.com/voxpupuli/puppet-dhcp/compare/0.3.0...0.4.0)
 
-**Breaking changes:**
-
-- Set ddns-hostname instead of option host-name for host declarations [\#59](https://github.com/voxpupuli/puppet-dhcp/pull/59) ([treydock](https://github.com/treydock))
-
 **Merged pull requests:**
 
 - Release 0.4.0 prep [\#70](https://github.com/voxpupuli/puppet-dhcp/pull/70) ([bmjen](https://github.com/bmjen))
@@ -125,6 +130,7 @@ These should not impact the functionality of the module.
 - Add omapi\_port parameter [\#62](https://github.com/voxpupuli/puppet-dhcp/pull/62) ([treydock](https://github.com/treydock))
 - Fix default ntpservers value to not fail validation [\#61](https://github.com/voxpupuli/puppet-dhcp/pull/61) ([treydock](https://github.com/treydock))
 - Allow additional options to be specified for dhcp::host [\#60](https://github.com/voxpupuli/puppet-dhcp/pull/60) ([treydock](https://github.com/treydock))
+- Set ddns-hostname instead of option host-name for host declarations [\#59](https://github.com/voxpupuli/puppet-dhcp/pull/59) ([treydock](https://github.com/treydock))
 - Add dnskeyname parameter [\#58](https://github.com/voxpupuli/puppet-dhcp/pull/58) ([treydock](https://github.com/treydock))
 - Normalise MAC addresses to upper case in dhcpd.host [\#57](https://github.com/voxpupuli/puppet-dhcp/pull/57) ([drt24](https://github.com/drt24))
 - Modernize Module [\#56](https://github.com/voxpupuli/puppet-dhcp/pull/56) ([underscorgan](https://github.com/underscorgan))
